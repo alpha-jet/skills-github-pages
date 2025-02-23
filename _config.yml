@@ -1,4 +1,66 @@
+# Site Settings
+title: Ansible Project Blog
+description: Documentation and tutorials for my Ansible project.
+url: "https://alpha-jet.github.io" # Replace with your GitHub Pages URL
+
+# GitHub Pages Settings
+github:
+  repository: alpha-jet/skills-github-page # Replace with your GitHub repository name
+
+# Navigation
+navigation:
+  - name: Home
+    url: /
+  - name: About
+    url: /about
+  - name: Documentation
+    url: /documentation
+  - name: Tutorials
+    url: /tutorials
+  - name: Blog
+    url: /blog
+  - name: GitHub
+    url: https://github.com/alpha-jet/skills-github-pages
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  - scope:
+      path: ""
+      type: "docs"
+    values:
+      layout: "page"
+  - scope:
+      path: ""
+      type: "tutorials"
+    values:
+      layout: "page"
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Exclude files and directories from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - .github
+  - .gitignore
+  - README.md
+
+# Syntax highlighting
+highlighter: rouge
+markdown: kramdown
+
+# Theme (optional)
 theme: minima
-title: My Git page
-author: Alpha Jet
-description: my first site for git pages
+
+# GitHub Pages requirements
+remote_theme: jekyll/minima # Use a remote theme if needed
+safe: true # Ensures only safe files are processed
