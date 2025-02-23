@@ -1,0 +1,25 @@
+---
+---
+
+@import "minima";
+
+// Your custom styles
+.home {
+  h1 {
+    color: $grey-color; // Use the theme's variable
+  }
+
+  ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+
+  a {
+    color: $brand-color; // Use the theme's variable
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
